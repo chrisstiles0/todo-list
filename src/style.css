@@ -25,6 +25,9 @@ header {
 
 aside {
     grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     padding: 24px;
     background-color: #bbf7d0;
 }
