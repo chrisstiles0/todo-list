@@ -1,4 +1,13 @@
 {
+  "type": "module",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "build:debug": "webpack --mode production --devtool source-map",
+    "watch": "webpack --mode development --watch"
+  },
   "devDependencies": {
     "css-loader": "^7.1.5",
     "html-loader": "^5.1.0",

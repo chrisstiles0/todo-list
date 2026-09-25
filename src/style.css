@@ -6,21 +6,11 @@ body {
     margin: 0;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 220px 1fr;
+    grid-template-columns: 250px 1fr;
     grid-template-rows: auto 1fr;
     grid-template-areas:
         "sidebar header"
         "sidebar main";
-}
-
-header {
-    grid-area: header;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100px;
-    padding: 16px;
-    background-color: #93c5fd;
 }
 
 aside {
@@ -38,3 +28,15 @@ main {
     padding: 24px;
     background-color: #fef3c7;
 }
+
+#toolbar {
+    padding: 16px;
+    background-color: #bfdbfe;
+}
+
+#main-content {
+    padding: 16px;
+    background-color: #e9d5ff;
+}
+
+

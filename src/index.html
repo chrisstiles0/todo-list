@@ -6,10 +6,6 @@
     <title>Todo list</title>
 </head>
 <body>
-    <header>
-        Projects
-    </header>
-
     <aside>
         <button id="sidebar-toggle-button" ></button>
         <nav>
@@ -18,22 +14,19 @@
                 <li><a href="#calendar">Calendar</a></li>
                 <li><a href="#settings">Settings</a></li>
             </ul>
+            <ul id="projects-list-sidebar">
+
+            </ul>
         </nav>
     </aside>
 
     <main>
-        <button id="new-list-button">New list</button>
-        <label for="project-search">Search projects</label>
-        <input type="search" id="project-search-input">
-        <label for="project-sort">Sort by:</label>
-        <select id="project-sort-select">
-            <option value="Recent">Recent</option>
-            <option value="Alphabetical">Alphabetical</option>
-            <option value="Completion">Completion</option>
-        </select>
+        <div id="toolbar">
+            
+        </div>
 
-        <div id="projects-list">
-
+        <div id="main-content">
+            
         </div>
     </main>
 </body>

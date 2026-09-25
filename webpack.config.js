@@ -1,15 +1,15 @@
 import path from "node:path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 
-export default {
-  mode: "development",
+export default (env, argv) => ({
+  mode: argv.mode ?? "development",
   entry: "./src/index.js",
   output: {
     filename: "main.js",
     path: path.resolve(import.meta.dirname, "dist"),
     clean: true,
   },
-  devtool: "eval-source-map",
+  devtool: argv.mode === "production" ? false : "eval-source-map",
   devServer: {
     watchFiles: ["./src/index.html"],
   },
@@ -34,4 +34,4 @@ export default {
       },
     ],
   },
-};
+});
