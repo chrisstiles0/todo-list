@@ -25,12 +25,15 @@ aside {
 main {
     grid-area: main;
     min-width: 0;
-    padding: 24px;
+    padding: 16px;
     background-color: #fef3c7;
 }
 
 #toolbar {
-    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
     background-color: #bfdbfe;
 }
 
@@ -39,4 +42,12 @@ main {
     background-color: #e9d5ff;
 }
 
+#new-project-button {
+    margin-right: auto;
+}
 
+#sort-group {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
