@@ -6,6 +6,7 @@
     <title>Todo list</title>
 </head>
 <body>
+
     <aside>
         <button id="sidebar-toggle-button" ></button>
         <nav>
@@ -14,20 +15,26 @@
                 <li><a href="#calendar" id="calendar-button">Calendar</a></li>
                 <li><a href="#settings" id="settings-button">Settings</a></li>
             </ul>
-            <ul id="projects-list-sidebar">
-
-            </ul>
         </nav>
     </aside>
 
     <main>
-        <div id="toolbar">
-            
-        </div>
-
-        <div id="main-content">
-            
-        </div>
+        <div id="toolbar"></div>
+        <div id="main-content"></div>
     </main>
+
+    <dialog id="new-project-dialog">
+        <form id="project-form">
+            <label for="project-name">Project name</label>
+            <input id="project-name" name="name" required>
+
+            <label for="project-description">Description</label>
+            <input id="project-description" name="description">
+
+            <button type="submit">Create</button>
+            <button type="button" id="cancel-project">Cancel</button>
+        </form>
+    </dialog>
+
 </body>
 </html>
